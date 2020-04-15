@@ -7,7 +7,7 @@ const prefix = 'y!';
 
 const typee = ["PLAYING", "WATCHING", "LISTENING"]
 client.on('ready', () => {
-    console.log(`Welcome bot by Pojan - Playing in ${client.guilds.cache.size} Servers`) //You can change this to whatever you wish it to say when you startup your bot! 
+    console.log(`Welcome bot by Pojan - Playing in ${client.guilds.cacheType.size} Servers`) //You can change this to whatever you wish it to say when you startup your bot! 
     let activities  = [ `With ${client.channels.cache.size} channels!`, `${prefix}help`, `With ${client.users.cache.size} users!` ], i = 0;
     setInterval(() => client.user.setActivity(`${activities[i++ % activities.length]}`, {type : typee[i++ % typee.length] }),20000)
 });
