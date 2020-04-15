@@ -2,7 +2,6 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const fs = require('fs');
 const Enmap = require("enmap");
-
 const token = "NjgyMTU1NTY2MDgwMTk2NjA5.XnxfTA.soEmm3w1NZoM-BmFzO08fGBZTtk";
 const prefix = 'y!';
 
